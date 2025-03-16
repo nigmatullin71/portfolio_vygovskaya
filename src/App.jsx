@@ -12,6 +12,7 @@ import About from "./components/About";
 import Skill from "./components/Skill";
 import Contact from "./components/Contact";
 import Projects from "./components/Projects";
+import Footer from "./components/Footer"
 
 
 const App = () => {
@@ -23,8 +24,9 @@ const App = () => {
             <About />
             <Skill />
             <Projects />
-            <Contact />
+            <Contact />            
         </main>
+        <Footer />
         </>
 
     )

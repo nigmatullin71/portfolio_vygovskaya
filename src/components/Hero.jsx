@@ -3,7 +3,7 @@
 /**
  * Components
  */
-import { ButtonPrimary, ButtonOutline } from "./Button"
+import { ButtonOutline } from "./Button"
 
 
 const Hero = () => {
@@ -28,14 +28,14 @@ const Hero = () => {
                         />
                     </figure>
 
-                    <div className="flex items-center gap-1.5 text-orange-700
+                    <div className="flex items-center gap-1.5 text-emerald-400
                     text-sm tracking-wide">
                         <span className="relative w-2 h-2 rounded-full bg-emerald-400">
                             <span className="absolute inset-0 rounded-full bg-emerald-400 animate-ping">                                
                             </span>
                         </span>
                        
-                        В поиске работы
+                        Всегда в поиске интересных проектов
                     </div>
                </div>
 
@@ -45,11 +45,6 @@ const Hero = () => {
                </h2>
 
                <div className="flex items-center gap-3">
-                <ButtonPrimary 
-                    label="Скачать резюме"
-                    icon="download"
-                
-                />
 
                 <ButtonOutline 
                     href="#about"

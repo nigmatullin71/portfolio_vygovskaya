@@ -2,19 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+
 html {
     scroll-behavior: smooth;
 }
 
 body{
-    @apply bg-orange-200 text-zinc-950;
+    @apply bg-zinc-950 text-zinc-200;
 }
 
 /* Typoghraphy*/
 
-.headline-1 {
+.headline-1,
+.headline-2 {
     @apply max-w-max;
-    background: -webkit-linear-gradient(0deg, #1c2f43, #526468);
+    background: -webkit-linear-gradient(0deg, #1f60a5, #b8c8cc);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -24,7 +26,13 @@ body{
     lg:leading-[1.15]
 }
 
+.headline-2 {
+    @apply text-3xl lg:text-4xl  lg:leading-tight font-semibold 
+ }
 
+.title-1{
+    @apply text-[22px] font-normal
+}
 /* Utilities */
 
 .material-symbols-rounded{
@@ -62,7 +70,7 @@ body{
 /* Navbar */
 
 .navbar{
-    @apply absolute top-full mt-2 right-0 min-w-40 p-2 bg-zinc-50/10 rounded-2xl
+    @apply absolute top-full mt-2 right-0 min-w-40 p-2 bg-zinc-200 rounded-2xl
     ring-inset ring-1 ring-zinc-50/5 scale-90 isolate blur-sm opacity-0 invisible
     transition-[opacity,transform,filter]  md:static md:flex md:items-center
     md:mt-0 md:opacity-100 md:blur-0 md:visible md:scale-100 backdrop-blur-2xl
@@ -74,7 +82,7 @@ body{
 
 .nav-link{
     @apply grid items-center h-9 px-4 text-sm font-medium
-    tracking-wide text-zinc-950 hover:text-orange-400
+    tracking-wide text-zinc-950 hover:text-blue-600
     transition-colors 
 }
 
@@ -90,13 +98,13 @@ body{
 /* Button */
 
 .btn {
-    @apply max-w-max h-9 flex items-center gap-2 px-4
-    rounded-xl font-medium text-sm ring-1 ring-zinc-50/5
+    @apply max-w-max h-9 bg-blue-500 text-zinc-50 flex items-center gap-2 px-4
+    rounded-xl font-medium text-sm ring-1 ring-blue-200
     ring-inset transition-[background-color]
 }
 
 .btn-secondary{
-    @apply bg-zinc-950 text-zinc-50 active:bg-zinc-950/80
+    @apply bg-zinc-200 text-zinc-900 active:bg-blue-400
 }
 
 .btn .material-symbols-rounded {
@@ -108,30 +116,31 @@ body{
 }
 
 .btn-primary {
-    @apply h-11 bg-orange-400 text-zinc-950 
-    active:bg-orange-600
+    @apply h-11 bg-blue-400 text-zinc-950 
+    active:bg-blue-600
 }
 
 
+
 .btn-outline {
-    @apply h-11 bg-orange-300 hover:bg-orange-400 active:bg-orange-500
+    @apply h-11 bg-zinc-200 text-zinc-950 hover:bg-blue-400 active:bg-blue-500
 }
 
 
 /* Text field */
 
 .label {
-    @apply block text-zinc-900 text-sm font-normal mb-2
+    @apply block text-zinc-200 text-sm font-normal mb-2
 }
 
 .text-field{
     @apply block outline-none w-full px-3 py-3 text-sm 
-    bg-orange-300 rounded-xl ring-1 ring-inset ring-transparent 
-    transition-shadow hover:ring-zinc-100/5 focus:ring-orange-600
+    bg-zinc-200 text-zinc-900 rounded-xl ring-1 ring-inset ring-transparent 
+    transition-shadow hover:ring-zinc-100/5 focus:ring-blue-600
     focus:ring-2
 }
 
 .text-field::placeholder{
-    @apply text-orange-700
+    @apply text-blue-600
 }
 

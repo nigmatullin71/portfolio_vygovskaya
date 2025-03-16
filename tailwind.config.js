@@ -10,7 +10,7 @@ export default {
   theme: {
     extend: {
       fontFamily:{
-        'sans': ['Oswald',  'sans-serif']
+        'sans': ["Prosto One", 'sans']
       }
     },
   },
